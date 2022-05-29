@@ -8,15 +8,12 @@ sd(dbar)
 #1b
 t.test(x, y, alternative = "greater", var.equal = FALSE)
 
-t.test(x,y, paired = TRUE)
-
 #1c
 var.test(x,y)
-
 t.test(x, y, mu = 0, alternative = "two.sided", var.equal = TRUE)
 
 # 2a
-# Saya setuju dengan claim tersebut
+# Saya setuju dengan klaim tersebut
 
 #2b
 install.packages("BSDA")
@@ -33,14 +30,13 @@ tsum.test(mean.x = 23500, s.x = 3900 ,n.x = 100, mu = 20000, alternative = "grea
 #H1 = Perbedaan sesungguhnya mean saham Bandung dan Bali =/= 0
 
 #3b
-set.seed(3)
-s_bdg <- rnorm(19, 3.64, 1.67)
-s_bli <- rnorm(27, 2.79, 1.32)
-s_bdg
-s_bli
+tsum.test(mean.x = 3.64, s.x = 1.67, n.x = 19, mean.y = 2.79 , s.y = 1.32, n.y = 27, alternative = "greater", var.equal = TRUE)
 
 #3c
-t.test(s_bdg, s_bli, alternative = "two.sided", var.equal = TRUE)
+install.packages("mosaic")
+library(mosaic)
+
+plotDist(dist = 't', df = 2)
 
 #3d
 qt(p = 0.05 / 2, df = 2, lower.tail = FALSE)
