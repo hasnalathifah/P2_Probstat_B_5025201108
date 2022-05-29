@@ -1,5 +1,4 @@
 # P2_Probstat_B_5025201108
-## Identitas
 Nama : Hasna Lathifah P<br>
 NRP : 5025201108<br>
 Kelas : Probstat B
