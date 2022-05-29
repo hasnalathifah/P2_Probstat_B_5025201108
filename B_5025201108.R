@@ -48,3 +48,31 @@ qt(p = 0.05 / 2, df = 2, lower.tail = FALSE)
 #3f
 # Dari hasil yang didapatkan, dapat disimpulkan bahwa
 # Perbedaan sesungguhnya mean saham pada Bandung dan Bali sama dengan 0
+
+#4a
+data_4 <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt"),header = TRUE, check.names = TRUE)
+byGroup <- split(data_4, data_4$Group)
+byGroup
+group1 <- byGroup$`1`
+group2 <- byGroup$`2`
+group3 <- byGroup$`3`
+
+#4b
+bartlett.test(data_4$Length, data_4$Group)
+
+#4c
+qqnorm(group1$Length)
+qqline(group1$Length)
+
+#4d
+# Kesimpulan : nilai p-value = 0.8054.
+
+#4e
+av <- lm(Length~ factor(Group), data = data_4)
+anova(av)
+TukeyHSD(aov(av))
+
+#4f
+library(ggplot2)
+ggplot(data_4, aes(x = Group, y = Length)) + geom_boxplot(fill = "grey80", colour = "black") + 
+scale_x_discrete() + xlab("Treatment Group") +  ylab("Length (cm)")
