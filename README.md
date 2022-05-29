@@ -50,3 +50,34 @@ Keputusan yang dapat diambil : Menerima H0
 ### D
 Dari hasil yang didapatkan, dapat disimpulkan bahwa Perbedaan sesungguhnya mean saham pada Bandung dan Bali sama dengan 0
 
+## No. 4
+### A
+Isi grup 1 <br>
+![image](https://user-images.githubusercontent.com/91044599/170880626-d647a1b4-1b53-4397-b9f0-4f97d5fd4662.png)<br>
+
+Isi grup 2 <br>
+![image](https://user-images.githubusercontent.com/91044599/170880656-38c4f925-1bf9-4d22-ac63-5ee083e36ac8.png)<br>
+
+Isi grup 3 <br>
+![image](https://user-images.githubusercontent.com/91044599/170880682-f9858f02-e470-43b3-8f9a-41102ddc5de3.png)<br>
+
+### B
+![image](https://user-images.githubusercontent.com/91044599/170881161-5de4436c-6d10-4843-aebd-cb8b3de0cf22.png)<br>
+Kesimpulan yang didapatkan yaitu Bartlett's K-squared memiliki nilai sebesar 0.43292 dan df bernilai 2
+
+### C
+membuat model linier dengan Panjang versus Grup dan memberi nama model tersebut model 1
+![image](https://user-images.githubusercontent.com/91044599/170880856-466ed623-d181-4ba8-a861-bf608a257818.png)
+
+### D
+Kesimpulan : nilai p-value = 0.8054.
+
+### E
+Langkah pertama, kemudian menggunakan command ANNOVA, selanjutnya menggunakan model Post-hoc Tukey HSD
+![image](https://user-images.githubusercontent.com/91044599/170881206-77c98a08-23e7-4584-9d55-943dd8866d37.png)
+
+### F
+Memvisualisasikan data dengan ggplot2
+![image](https://user-images.githubusercontent.com/91044599/170881383-04947375-87c2-40e2-8d6e-4f15a0d07e34.png)
+
+
